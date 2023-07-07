@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Favorite Movies</title>
+    <!-- font awesome icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- logo -->
+      <div class="logo">
+        <div class="container">
+          <a href="index.html">
+            <p>IMDB<span>Clone.</span></p>
+          </a>
+          <a href="favorite-movies.html" class="favorite-button"
+            ><i class="fas fa-star"></i
+          ></a>
+        </div>
+      </div>
+      <!-- end of logo -->
+      <!-- favorite movies container -->
+      <div class="container">
+        <div class="result-container">
+          <h2 class="title">My Favorite Movies</h2>
+          <div class="result-grid" id="result-grid">
+            <!-- favorite movie information here -->
+          </div>
+        </div>
+      </div>
+      <!-- end of favorite movies container -->
+    </div>
+    <!-- favorite movies js -->
+    <script src="script.js"></script>
+  </body>
+</html>
