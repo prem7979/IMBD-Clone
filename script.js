@@ -60,7 +60,7 @@ function loadMovieDetails() {
       searchList.classList.add('hide-search-list');
       movieSearchBox.value = '';
       const response = await fetch(
-        `http://www.omdbapi.com/?i=${item.dataset.id}&apikey=bfd6b563`
+        `https://www.omdbapi.com/?i=${item.dataset.id}&apikey=bfd6b563`
       );
       const movieDetails = await response.json();
       displayMovieDetails(movieDetails);
@@ -180,7 +180,7 @@ function createMovieElement(details) {
 
 async function fetchMovieDetails(movieId) {
   const response = await fetch(
-    `http://www.omdbapi.com/?apikey=bfd6b563&i=${movieId}`
+    `https://www.omdbapi.com/?apikey=bfd6b563&i=${movieId}`
   );
   const data = await response.json();
   return data;
